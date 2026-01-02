@@ -1,0 +1,7 @@
+apiVersion: tekton.dev/v1beta1
+kind: TaskRun
+metadata:
+  generateName: hello-world-run- # generateName adds a random suffix for unique execution
+spec:
+  taskRef:
+    name: hello-world-task
